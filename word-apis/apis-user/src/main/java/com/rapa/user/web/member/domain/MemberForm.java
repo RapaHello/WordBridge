@@ -7,7 +7,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class Join {
+public class MemberForm {
     @NotEmpty
     @Pattern(regexp = "^[a-z0-9]{6,15}$", message = "아이디 형식을 확인해 주세요.")
     private String id;          // 아이디
