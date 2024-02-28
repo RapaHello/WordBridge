@@ -1,1 +1,6 @@
 rootProject.name = 'WordBridge'
+
+include 'word-apis'
+include ':word-apis:apis-user'
+
+include 'word-core'
