@@ -21,9 +21,7 @@ class FormValidation {
 
         this.#firstErrorField = null;   // 필드 초기화
         if (this.#validateForm()) {
-            const form = document.querySelector('#formValidation');
-            form.action = '/join';
-            form.submit();
+            this.#form.submit();
         } else {
             this.#focusFirstErrorField();   // 실패 시 첫 번째 오류 필드에 포커스
         }

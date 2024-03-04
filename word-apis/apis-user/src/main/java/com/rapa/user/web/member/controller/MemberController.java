@@ -22,6 +22,6 @@ public class MemberController {
 
     @PostMapping("/join")
     public String checkJoin(@Valid @ModelAttribute JoinForm joinForm, BindingResult bindingResult) {
-        return "";
+        return "main";
     }
 }

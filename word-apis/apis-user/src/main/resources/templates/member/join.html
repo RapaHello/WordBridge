@@ -115,7 +115,7 @@
                             <p class="mb-4">Make Your Word Management Easy And Fun!</p>
 
                             <!-- Form -->
-                            <form th:object="${joinForm}" class="mb-3" id="formValidation" method="post">
+                            <form th:object="${joinForm}" th:action="@{/member/join}" class="mb-3" id="formValidation" method="post">
                                 <!-- ID -->
                                 <div class="mb-3">
                                     <label class="form-label" for="id">ID</label>
@@ -175,7 +175,7 @@
                                 <div class="mb-3">
                                     <label class="form-label" for="address1">ADDRESS</label>
                                     <input type="text" class="form-control empty" th:field="*{address1}" id="address1"
-                                           title="기본 주소" placeholder="기본 주소" disabled/>
+                                           title="기본 주소" placeholder="기본 주소"/>
                                     <div class="field-error" id="address1-error">
                                         <span th:error="*{address1}"></span>
                                     </div>
