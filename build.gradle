@@ -50,8 +50,12 @@ project('word-apis') {
 		jar.enabled = false
 
 		dependencies {
+			// thymeleaf layout 및 template
+			implementation 'nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect'
 			implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+
 			implementation 'org.springframework.boot:spring-boot-starter-validation'
+			implementation 'org.springframework.boot:spring-boot-starter-mail'
 
 			implementation project(':word-core')
 		}
