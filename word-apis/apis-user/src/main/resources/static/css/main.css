@@ -1,0 +1,5 @@
+/* 에러 글자 색상 설정 */
+.field-error {
+    border-color: #dc3545;
+    color: #dc3545;
+}
